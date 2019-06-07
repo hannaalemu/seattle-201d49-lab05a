@@ -11,7 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
   var mySum = a + b;
-  return [mySum, "The sum of " + a + " and " + b + " is " + mySum + "."];
+  return [mySum, 'The sum of ' + a + ' and ' + b + ' is ' + mySum + '.'];
 }
 
 console.log(sum(4, 7));
@@ -19,6 +19,7 @@ console.log(sum(4, 7));
 // Here is the test for sum(); uncomment it to run it one time no chnages
 testSum(4, 7);
 
+const newLocal = ' is ';
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -31,11 +32,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  var myProduct = (a * b);
+  return [myProduct, 'The product of ' + a + ' and ' + b + ' is ' + myProduct + '.' ];
 }
+console.log(multiply( 5, 9));
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+// eslint-disable-next-line no-undef
+
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
