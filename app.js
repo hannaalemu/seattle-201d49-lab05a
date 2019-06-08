@@ -64,7 +64,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var finalProduct = parseInt(multiply(newProduct,c));
 
   return [finalSum, finalProduct , a + ' and ' + b + ' and ' + c + ' sum to ' + finalSum + '.' , 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + finalProduct + '.'];
-} 
+}
 console.log(sumAndMultiply(4,7,5));
 
 
@@ -85,15 +85,23 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
+
+
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  var sumOne = sum(testArray[0], testArray[1])[0];
+  var sumTwo = sum(sumOne, testArray[2])[0];
+ 
+  return[ sumTwo , testArray + ' was passed in as an array of numbers, and ' + sumTwo + ' is their sum' + '.'];
 
 }
+console.log(sumArray(testArray));
+
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+ testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
